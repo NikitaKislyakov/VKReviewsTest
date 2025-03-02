@@ -1,31 +1,31 @@
 import UIKit
 
 final class RootView: UIView {
-
+    
     private let reviewsButton = UIButton(type: .system)
     private let onTapReviews: () -> Void
-
+    
     init(onTapReviews: @escaping () -> Void) {
         self.onTapReviews = onTapReviews
         super.init(frame: .zero)
         setupView()
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
 }
 
 // MARK: - Private
 
 private extension RootView {
-
+    
     func setupView() {
         backgroundColor = .systemBackground
         setupReviewsButton()
     }
-
+    
     func setupReviewsButton() {
         reviewsButton.setTitle("Отзывы", for: .normal)
         reviewsButton.setImage(UIImage(systemName: "chevron.left"), for: .normal)
@@ -39,5 +39,5 @@ private extension RootView {
             reviewsButton.centerYAnchor.constraint(equalTo: centerYAnchor),
         ])
     }
-
+    
 }

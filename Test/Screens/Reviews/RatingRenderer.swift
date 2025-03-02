@@ -1,19 +1,19 @@
 import UIKit
 
 struct RatingRendererConfig {
-
+    
     let ratingRange: ClosedRange<Int>
     let starImage: UIImage
     let tintColor: UIColor
     let fadeColor: UIColor
     let spacing: CGFloat
-
+    
 }
 
 // MARK: - Internal
 
 extension RatingRendererConfig {
-
+    
     static func `default`() -> Self {
         let starSize = CGSize(width: 16.0, height: 16.0)
         let starImage = UIGraphicsImageRenderer(size: starSize).image {
@@ -27,18 +27,18 @@ extension RatingRendererConfig {
             spacing: 1.0
         )
     }
-
+    
 }
 
 // MARK: - Renderer
 
 /// Класс рисует изображение рейтинга (звёзды) и кэширует его.
 final class RatingRenderer {
-
+    
     private let config: RatingRendererConfig
     private var images: [Int: UIImage]
     private let imageRenderer: UIGraphicsImageRenderer
-
+    
     init(
         config: RatingRendererConfig,
         images: [Int: UIImage],
@@ -48,13 +48,13 @@ final class RatingRenderer {
         self.images = images
         self.imageRenderer = imageRenderer
     }
-
+    
 }
 
 // MARK: - Internal
 
 extension RatingRenderer {
-
+    
     convenience init(config: RatingRendererConfig = .default()) {
         let size = CGSize(
             width: (config.starImage.size.width + config.spacing) * CGFloat(config.ratingRange.upperBound) - config.spacing,
@@ -62,23 +62,23 @@ extension RatingRenderer {
         )
         self.init(config: config, images: [:], imageRenderer: UIGraphicsImageRenderer(size: size))
     }
-
+    
     func ratingImage(_ rating: Int) -> UIImage {
         images[rating] ?? drawRatingImageAndCache(rating)
     }
-
+    
 }
 
 // MARK: - Private
 
 private extension RatingRenderer {
-
+    
     func drawRatingImageAndCache(_ rating: Int) -> UIImage {
         let ratingImage = drawRatingImage(rating)
         images[rating] = ratingImage
         return ratingImage
     }
-
+    
     func drawRatingImage(_ rating: Int) -> UIImage {
         let tintedStarImage = config.starImage.withTintColor(config.tintColor)
         let fadedStarImage = config.starImage.withTintColor(config.fadeColor)
@@ -91,5 +91,5 @@ private extension RatingRenderer {
         }
         return renderedImage
     }
-
+    
 }

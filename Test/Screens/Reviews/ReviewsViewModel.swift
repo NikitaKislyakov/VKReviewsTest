@@ -122,6 +122,46 @@ private extension ReviewsViewModel {
         }
     }
     
+    /// Загружает и обновляет фотографии отзыва.
+    /// Асинхронно загружает изображения по `photosURLs` и добавляет их в `userImages`
+    /// соответствующего `ReviewCellConfig`.
+    func loadPhotos(for review: Review) {
+        let urlArray = review.photosURLs
+        
+        guard !urlArray.isEmpty else { return }
+        
+        
+        for (index, urlString) in urlArray.enumerated() {
+            guard let url = URL(string: urlString) else { continue }
+            
+            networkService.loadImage(from: url) { [weak self] result in
+                guard let self = self else { return }
+                
+                DispatchQueue.main.async {
+                    switch result {
+                    case .success(let image):
+                        if let indexInState = self.state.items.firstIndex(where: { ($0 as? ReviewCellConfig)?.id == review.id }),
+                           let image = image {
+                            
+                            var updatedItem = self.state.items[indexInState] as! ReviewCellConfig
+                            
+                            if index < updatedItem.userImages.count {
+                                updatedItem.userImages[index] = image
+                            } else {
+                                updatedItem.userImages.append(image)
+                            }
+                            
+                            self.state.items[indexInState] = updatedItem
+                            self.onStateChange?(self.state)
+                        }
+                    case .failure(let error):
+                        print("Ошибка загрузки фото: \(error)")
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 // MARK: - Items
@@ -140,11 +180,10 @@ private extension ReviewsViewModel {
         let rating = review.rating
         let ratingImage = ratingRenderer.ratingImage(rating)
         let placeholderImage = UIImage(named: "l5w5aIHioYc")
-        let photoCount = review.photoCount
-        let userImages = PhotoProvider.shared.providePhotos(for: photoCount)
         
         DispatchQueue.main.async { [weak self] in
             self?.loadAvatar(for: review)
+            self?.loadPhotos(for: review)
         }
         
         return ReviewCellConfig(
@@ -155,7 +194,7 @@ private extension ReviewsViewModel {
             avatarImage: placeholderImage,
             userName: userName,
             ratingImage: ratingImage,
-            userImages: userImages
+            userImages: []
         )
     }
     

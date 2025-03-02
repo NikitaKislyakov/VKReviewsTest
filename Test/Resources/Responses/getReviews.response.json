@@ -8,7 +8,6 @@
             "text": "Кроссовки хорошие. Удобные. Как по мне сшиты.",
             "created": "1 час назад",
             "avatar_url" : "https://robohash.org/person1.png",
-            "photo_count": 5
         },
         {
             "first_name": "Екатерина",
@@ -16,7 +15,12 @@
             "rating": 3,
             "text": "Скользские ужасно.",
             "created": "12 минут назад",
-            "avatar_url" : "https://robohash.org/person2.png"
+            "avatar_url" : "https://robohash.org/person2.png",
+            "photos_urls" : [
+                "https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&w=400&h=600",
+                "https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&w=400&h=600",
+                "https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&w=400&h=600"
+            ]
         },
         {
             "first_name": "Евгения",
@@ -33,7 +37,14 @@
             "text": "Понравилось отношение - несмотря на то, что заказ был выполнен не идеально, продавец был очень любезен и шёл... Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
             "created": "минуту назад",
             "avatar_url" : "https://robohash.org/person4.png",
-            "photo_count": 3
+            "photo_count": 3,
+            "photos_urls" : [
+                "https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&w=400&h=600",
+                "https://images.pexels.com/photos/416676/pexels-photo-416676.jpeg?auto=compress&cs=tinysrgb&w=400&h=600",
+                "https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&w=400&h=600",
+                "https://images.pexels.com/photos/2526028/pexels-photo-2526028.jpeg?auto=compress&cs=tinysrgb&w=400&h=600",
+                "https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&w=400&h=600"
+            ]
         },
         {
             "first_name": "Никита",
@@ -59,7 +70,10 @@
             "text": "",
             "created": "вчера в 12:39",
             "avatar_url" : "https://robohash.org/person7.png",
-            "photo_count": 2
+            "photo_count": 2,
+            "photos_urls" : [
+                "https://images.pexels.com/photos/2014422/pexels-photo-2014422.jpeg?auto=compress&cs=tinysrgb&w=400&h=600"
+            ]
         },
 
 

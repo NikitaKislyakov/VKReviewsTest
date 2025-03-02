@@ -15,9 +15,16 @@ final class PhotoCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+}
+
+// MARK: – Internal
+
+extension PhotoCell {
+    
     func configure(with image: UIImage) {
         imageView.image = image
     }
+    
 }
 
 // MARK: – Private

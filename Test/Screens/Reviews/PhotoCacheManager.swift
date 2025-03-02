@@ -8,6 +8,12 @@ final class PhotoCacheManager {
         createFolderIfNeeded()
     }
     
+}
+
+// MARK: – Internal
+
+extension PhotoCacheManager {
+    
     /// Сохраняет изображение в кэш
     func saveImage(_ image: UIImage, imageName: String) {
         guard let data = image.pngData(),
@@ -58,5 +64,5 @@ private extension PhotoCacheManager {
     private func getImageURL(imageName: String) -> URL? {
         getFolderURL()?.appendingPathComponent(imageName)
     }
-   
+    
 }

@@ -1,5 +1,5 @@
 final class ReviewsScreenFactory {
-
+    
     /// Создаёт контроллер списка отзывов, проставляя нужные зависимости.
     func makeReviewsController() -> ReviewsViewController {
         let reviewsProvider = ReviewsProvider()
@@ -9,5 +9,5 @@ final class ReviewsScreenFactory {
         let controller = ReviewsViewController(viewModel: viewModel)
         return controller
     }
-
+    
 }
