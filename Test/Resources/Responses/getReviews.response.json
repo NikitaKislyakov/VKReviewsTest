@@ -1,0 +1,181 @@
+{
+    "count": 127,
+    "items": [
+        {
+            "first_name": "Иван",
+            "last_name": "Петров",
+            "rating": 5,
+            "text": "Кроссовки хорошие. Удобные. Как по мне сшиты.",
+            "created": "1 час назад",
+            "avatar_url" : "https://robohash.org/person1.png",
+            "photo_count": 5
+        },
+        {
+            "first_name": "Екатерина",
+            "last_name": "Иванова",
+            "rating": 3,
+            "text": "Скользские ужасно.",
+            "created": "12 минут назад",
+            "avatar_url" : "https://robohash.org/person2.png"
+        },
+        {
+            "first_name": "Евгения",
+            "last_name": "Петрова",
+            "rating": 4,
+            "text": "Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
+            "created": "35 минут назад",
+            "avatar_url" : "https://robohash.org/person3.png"
+        },
+        {
+            "first_name": "Илья",
+            "last_name": "Петров",
+            "rating": 2,
+            "text": "Понравилось отношение - несмотря на то, что заказ был выполнен не идеально, продавец был очень любезен и шёл... Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
+            "created": "минуту назад",
+            "avatar_url" : "https://robohash.org/person4.png",
+            "photo_count": 3
+        },
+        {
+            "first_name": "Никита",
+            "last_name": "Иванов",
+            "rating": 5,
+            "text": "Отлично выглядят, хоть и скользковатые...",
+            "created": "только что",
+            "avatar_url" : "https://robohash.org/person5.png"
+        },
+        {
+            "first_name": "Олег",
+            "last_name": "Николаев",
+            "rating": 1,
+            "text": "Ребёнок жалуется, что очень скользские. Пока шла до школы...",
+            "created": "15 минут назад",
+            "avatar_url" : "https://robohash.org/person6.png",
+            "photo_count": 1
+        },
+        {
+            "first_name": "Николай",
+            "last_name": "Петров",
+            "rating": 2,
+            "text": "",
+            "created": "вчера в 12:39",
+            "avatar_url" : "https://robohash.org/person7.png",
+            "photo_count": 2
+        },
+
+
+        {
+            "first_name": "Иван",
+            "last_name": "Петров",
+            "rating": 5,
+            "text": "Кроссовки хорошие. Удобные. Как по мне сшиты.",
+            "created": "1 час назад",
+            "avatar_url" : "https://robohash.org/person8.png"
+        },
+        {
+            "first_name": "Екатерина",
+            "last_name": "Иванова",
+            "rating": 3,
+            "text": "Скользские ужасно.",
+            "created": "12 минут назад",
+            "avatar_url" : "https://robohash.org/person9.png"
+        },
+        {
+            "first_name": "Евгения",
+            "last_name": "Петрова",
+            "rating": 4,
+            "text": "Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
+            "created": "35 минут назад",
+            "avatar_url" : "https://robohash.org/person10.png"
+        },
+        {
+            "first_name": "Илья",
+            "last_name": "Петров",
+            "rating": 2,
+            "text": "Понравилось отношение - несмотря на то, что заказ был выполнен не идеально, продавец был очень любезен и шёл... Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
+            "created": "минуту назад",
+            "avatar_url" : "https://robohash.org/perso11.png"
+        },
+        {
+            "first_name": "Никита",
+            "last_name": "Иванов",
+            "rating": 5,
+            "text": "Отлично выглядят, хоть и скользковатые...",
+            "created": "только что",
+            "avatar_url" : "https://robohash.org/person12.png"
+        },
+        {
+            "first_name": "Олег",
+            "last_name": "Николаев",
+            "rating": 1,
+            "text": "Ребёнок жалуется, что очень скользские. Пока шла до школы...",
+            "created": "15 минут назад",
+            "avatar_url" : "https://robohash.org/person13.png"
+        },
+        {
+            "first_name": "Николай",
+            "last_name": "Петров",
+            "rating": 2,
+            "text": "",
+            "created": "вчера в 12:39",
+            "avatar_url" : "https://robohash.org/person14.png"
+        },
+
+
+        {
+            "first_name": "Иван",
+            "last_name": "Петров",
+            "rating": 5,
+            "text": "Кроссовки хорошие. Удобные. Как по мне сшиты.",
+            "created": "1 час назад",
+            "avatar_url" : "https://robohash.org/person15.png"
+        },
+        {
+            "first_name": "Екатерина",
+            "last_name": "Иванова",
+            "rating": 3,
+            "text": "Скользские ужасно.",
+            "created": "12 минут назад",
+            "avatar_url" : "https://robohash.org/person16.png"
+        },
+        {
+            "first_name": "Евгения",
+            "last_name": "Петрова",
+            "rating": 4,
+            "text": "Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
+            "created": "35 минут назад",
+            "avatar_url" : "https://robohash.org/person17.png"
+        },
+        {
+            "first_name": "Илья",
+            "last_name": "Петров",
+            "rating": 2,
+            "text": "Понравилось отношение - несмотря на то, что заказ был выполнен не идеально, продавец был очень любезен и шёл... Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
+            "created": "минуту назад",
+            "avatar_url" : "https://robohash.org/person18.png"
+        },
+        {
+            "first_name": "Никита",
+            "last_name": "Иванов",
+            "rating": 5,
+            "text": "Отлично выглядят, хоть и скользковатые...",
+            "created": "только что",
+            "avatar_url" : "https://robohash.org/person19.png"
+        },
+        {
+            "first_name": "Олег",
+            "last_name": "Николаев",
+            "rating": 1,
+            "text": "Ребёнок жалуется, что очень скользские. Пока шла до школы...",
+            "created": "15 минут назад",
+            "avatar_url" : "https://robohash.org/person20.png"
+        },
+        {
+            "first_name": "Николай",
+            "last_name": "Петров",
+            "rating": 2,
+            "text": "",
+            "created": "вчера в 12:39",
+            "avatar_url" : "https://robohash.org/person21.png"
+        },
+    ]
+}
